@@ -1,0 +1,12 @@
+
+install! 'cocoapods', :deterministic_uuids => false
+target 'CommonPods_Example' do
+ 
+    use_modular_headers!
+  pod 'CommonPods', :path => '../'
+  target 'CommonPods_Tests' do
+    inherit! :search_paths
+
+    
+  end
+end
