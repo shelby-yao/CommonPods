@@ -1,0 +1,6 @@
+module CommonPods {
+  umbrella header "CommonPods-umbrella.h"
+
+  export *
+  module * { export * }
+}

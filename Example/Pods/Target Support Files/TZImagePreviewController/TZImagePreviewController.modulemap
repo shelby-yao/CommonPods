@@ -1,0 +1,6 @@
+module TZImagePreviewController {
+  umbrella header "TZImagePreviewController-umbrella.h"
+
+  export *
+  module * { export * }
+}
