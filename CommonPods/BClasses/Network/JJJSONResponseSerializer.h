@@ -6,7 +6,7 @@
 //
 
 #import <Foundation/Foundation.h>
-#import <AFNetworking/AFNetworking.h>
+#import "JKNetworking.h"
 //NS_ASSUME_NONNULL_BEGIN
 static NSString *const JsonResponseSerializerKey = @"body";
 static NSString *const JsonResponseSerializerBodyKey = @"statusCode";

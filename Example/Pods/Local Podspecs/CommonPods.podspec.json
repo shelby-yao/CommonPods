@@ -1,8 +1,12 @@
 {
   "name": "CommonPods",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "summary": "A short description of CommonPods.",
   "description": "TODO: Add long description of the pod here.",
+  "source": {
+    "git": "https://github.com/shelby-yao/CommonPods.git",
+    "tag": "0.0.2"
+  },
   "homepage": "https://github.com/shelby-yao/CommonPods",
   "license": {
     "type": "MIT",
@@ -10,10 +14,6 @@
   },
   "authors": {
     "shelby-yao": "shelby_yao@163.com"
-  },
-  "source": {
-    "git": "https://github.com/shelby-yao/CommonPods.git",
-    "tag": "0.0.1"
   },
   "swift_versions": "5.0",
   "platforms": {
@@ -52,13 +52,10 @@
       "4.0.1"
     ],
     "JKNetwork": [
-
+      "0.0.8"
     ],
     "Toast-Swift": [
       "4.0.1"
-    ],
-    "FDFullscreenPopGesture": [
-      "1.1"
     ],
     "MJRefresh": [
       "3.2.3"
