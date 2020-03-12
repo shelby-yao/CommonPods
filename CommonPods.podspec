@@ -33,17 +33,17 @@ Pod::Spec.new do |s|
     s.source_files = 'CommonPods/Classes/**/*.{h,m,swift}', 'CommonPods/BClasses/**/*.{h,m,swift}'
     s.public_header_files = 'CommonPods/Classes/**/*.h', 'CommonPods/BClasses/**/*.h'
     s.resources = 'CommonPods/Classes/TZImagePickerController.bundle', 'CommonPods/BClasses/business.bundle', 'CommonPods/BClasses/keyboard.bundle'
-    s.dependency 'JKUIViewExtension', '~>0.0.3'
-    s.dependency 'JKAlertTransition', '0.0.1'
+    s.dependency 'JKUIViewExtension', '~>0.0.3' , :modular_headers => true
+    s.dependency 'JKAlertTransition', '0.0.1' , :modular_headers => true
+    s.dependency 'JKNetwork' , '0.0.8' , :modular_headers => true
+    s.dependency 'FDFullscreenPopGesture', '1.1' , :modular_headers => true
+    s.dependency 'MJRefresh' , '3.2.3' , :modular_headers => true
+    s.dependency 'TZImagePreviewController' , '0.3.0' , :modular_headers => true
+    s.dependency 'YYCategories' , :modular_headers => true
     s.dependency 'SnapKit' , '4.2.0'
     s.dependency 'RxSwift' , '5.1.0'
     s.dependency 'RxCocoa' , '5.1.0'
-    s.dependency 'JKNetwork' , '0.0.8'
     s.dependency 'Toast-Swift', '4.0.1'
-    s.dependency 'FDFullscreenPopGesture', '1.1'
-    s.dependency 'MJRefresh' , '3.2.3'
     s.dependency 'Swinject'
     
-    s.dependency 'TZImagePreviewController' , '0.3.0'
-    s.dependency 'YYCategories'
 end
