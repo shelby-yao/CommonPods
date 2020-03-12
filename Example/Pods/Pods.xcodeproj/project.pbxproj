@@ -762,71 +762,71 @@
 			isa = PBXContainerItemProxy;
 			containerPortal = 46EB2E00000000 /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = 19622742EBA51E823D6DAE3F8CDBFAD4;
-			remoteInfo = SnapKit;
-		};
-		46EB2E00006240 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 46EB2E00000000 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = EA9EA43B3B503823EE36C60D9C8A865F;
-			remoteInfo = RxSwift;
-		};
-		46EB2E00006260 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 46EB2E00000000 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 7AD0C6DCDC9CEC8A3C7C10C7FEE07BE6;
-			remoteInfo = RxCocoa;
-		};
-		46EB2E00006280 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 46EB2E00000000 /* Project object */;
-			proxyType = 1;
 			remoteGlobalIDString = 5BF2F861A73EACF73B4708BB3D1A657A;
 			remoteInfo = JKNetwork;
 		};
-		46EB2E000062A0 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 46EB2E00000000 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = B990BD87169C76A3ED3FE8A9258D91A3;
-			remoteInfo = "Toast-Swift";
-		};
-		46EB2E000062C0 /* PBXContainerItemProxy */ = {
+		46EB2E00006240 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 46EB2E00000000 /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = 8FE0EB310F454719A11FBFEAAC09FE3E;
 			remoteInfo = FDFullscreenPopGesture;
 		};
-		46EB2E000062E0 /* PBXContainerItemProxy */ = {
+		46EB2E00006260 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 46EB2E00000000 /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = 6868056D761E163D10FDAF8CF1C4D9B8;
 			remoteInfo = MJRefresh;
 		};
-		46EB2E00006300 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 46EB2E00000000 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 46065AF968A5A92D450BB21F7F24367D;
-			remoteInfo = Swinject;
-		};
-		46EB2E00006320 /* PBXContainerItemProxy */ = {
+		46EB2E00006280 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 46EB2E00000000 /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = 8039345460AF440AFE2806B294D8ED36;
 			remoteInfo = TZImagePreviewController;
 		};
-		46EB2E00006340 /* PBXContainerItemProxy */ = {
+		46EB2E000062A0 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 46EB2E00000000 /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = 4CF4590C80DA0BCFB23334523B614709;
 			remoteInfo = YYCategories;
+		};
+		46EB2E000062C0 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 46EB2E00000000 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 19622742EBA51E823D6DAE3F8CDBFAD4;
+			remoteInfo = SnapKit;
+		};
+		46EB2E000062E0 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 46EB2E00000000 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = EA9EA43B3B503823EE36C60D9C8A865F;
+			remoteInfo = RxSwift;
+		};
+		46EB2E00006300 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 46EB2E00000000 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 7AD0C6DCDC9CEC8A3C7C10C7FEE07BE6;
+			remoteInfo = RxCocoa;
+		};
+		46EB2E00006320 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 46EB2E00000000 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = B990BD87169C76A3ED3FE8A9258D91A3;
+			remoteInfo = "Toast-Swift";
+		};
+		46EB2E00006340 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 46EB2E00000000 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 46065AF968A5A92D450BB21F7F24367D;
+			remoteInfo = Swinject;
 		};
 		46EB2E00006360 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
@@ -3323,18 +3323,18 @@
 			buildRules = (
 			);
 			dependencies = (
-				46EB2E000062D0 /* PBXTargetDependency */,
-				46EB2E00006210 /* PBXTargetDependency */,
-				46EB2E00006290 /* PBXTargetDependency */,
-				46EB2E000061F0 /* PBXTargetDependency */,
-				46EB2E000062F0 /* PBXTargetDependency */,
-				46EB2E00006270 /* PBXTargetDependency */,
 				46EB2E00006250 /* PBXTargetDependency */,
+				46EB2E00006210 /* PBXTargetDependency */,
 				46EB2E00006230 /* PBXTargetDependency */,
+				46EB2E000061F0 /* PBXTargetDependency */,
+				46EB2E00006270 /* PBXTargetDependency */,
 				46EB2E00006310 /* PBXTargetDependency */,
+				46EB2E000062F0 /* PBXTargetDependency */,
+				46EB2E000062D0 /* PBXTargetDependency */,
+				46EB2E00006350 /* PBXTargetDependency */,
+				46EB2E00006290 /* PBXTargetDependency */,
 				46EB2E00006330 /* PBXTargetDependency */,
 				46EB2E000062B0 /* PBXTargetDependency */,
-				46EB2E00006350 /* PBXTargetDependency */,
 			);
 			name = CommonPods;
 			productName = CommonPods;
@@ -4496,62 +4496,62 @@
 		};
 		46EB2E00006230 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			name = SnapKit;
-			target = 19622742EBA51E823D6DAE3F8CDBFAD4 /* SnapKit */;
+			name = JKNetwork;
+			target = 5BF2F861A73EACF73B4708BB3D1A657A /* JKNetwork */;
 			targetProxy = 46EB2E00006220 /* PBXContainerItemProxy */;
 		};
 		46EB2E00006250 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			name = RxSwift;
-			target = EA9EA43B3B503823EE36C60D9C8A865F /* RxSwift */;
+			name = FDFullscreenPopGesture;
+			target = 8FE0EB310F454719A11FBFEAAC09FE3E /* FDFullscreenPopGesture */;
 			targetProxy = 46EB2E00006240 /* PBXContainerItemProxy */;
 		};
 		46EB2E00006270 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			name = RxCocoa;
-			target = 7AD0C6DCDC9CEC8A3C7C10C7FEE07BE6 /* RxCocoa */;
+			name = MJRefresh;
+			target = 6868056D761E163D10FDAF8CF1C4D9B8 /* MJRefresh */;
 			targetProxy = 46EB2E00006260 /* PBXContainerItemProxy */;
 		};
 		46EB2E00006290 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			name = JKNetwork;
-			target = 5BF2F861A73EACF73B4708BB3D1A657A /* JKNetwork */;
+			name = TZImagePreviewController;
+			target = 8039345460AF440AFE2806B294D8ED36 /* TZImagePreviewController */;
 			targetProxy = 46EB2E00006280 /* PBXContainerItemProxy */;
 		};
 		46EB2E000062B0 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			name = "Toast-Swift";
-			target = B990BD87169C76A3ED3FE8A9258D91A3 /* Toast-Swift */;
+			name = YYCategories;
+			target = 4CF4590C80DA0BCFB23334523B614709 /* YYCategories */;
 			targetProxy = 46EB2E000062A0 /* PBXContainerItemProxy */;
 		};
 		46EB2E000062D0 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			name = FDFullscreenPopGesture;
-			target = 8FE0EB310F454719A11FBFEAAC09FE3E /* FDFullscreenPopGesture */;
+			name = SnapKit;
+			target = 19622742EBA51E823D6DAE3F8CDBFAD4 /* SnapKit */;
 			targetProxy = 46EB2E000062C0 /* PBXContainerItemProxy */;
 		};
 		46EB2E000062F0 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			name = MJRefresh;
-			target = 6868056D761E163D10FDAF8CF1C4D9B8 /* MJRefresh */;
+			name = RxSwift;
+			target = EA9EA43B3B503823EE36C60D9C8A865F /* RxSwift */;
 			targetProxy = 46EB2E000062E0 /* PBXContainerItemProxy */;
 		};
 		46EB2E00006310 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			name = Swinject;
-			target = 46065AF968A5A92D450BB21F7F24367D /* Swinject */;
+			name = RxCocoa;
+			target = 7AD0C6DCDC9CEC8A3C7C10C7FEE07BE6 /* RxCocoa */;
 			targetProxy = 46EB2E00006300 /* PBXContainerItemProxy */;
 		};
 		46EB2E00006330 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			name = TZImagePreviewController;
-			target = 8039345460AF440AFE2806B294D8ED36 /* TZImagePreviewController */;
+			name = "Toast-Swift";
+			target = B990BD87169C76A3ED3FE8A9258D91A3 /* Toast-Swift */;
 			targetProxy = 46EB2E00006320 /* PBXContainerItemProxy */;
 		};
 		46EB2E00006350 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			name = YYCategories;
-			target = 4CF4590C80DA0BCFB23334523B614709 /* YYCategories */;
+			name = Swinject;
+			target = 46065AF968A5A92D450BB21F7F24367D /* Swinject */;
 			targetProxy = 46EB2E00006340 /* PBXContainerItemProxy */;
 		};
 		46EB2E00006370 /* PBXTargetDependency */ = {

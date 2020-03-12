@@ -19,6 +19,7 @@
   "platforms": {
     "ios": "10.0"
   },
+  "static_framework": true,
   "source_files": [
     "CommonPods/Classes/**/*.{h,m,swift}",
     "CommonPods/BClasses/**/*.{h,m,swift}"
@@ -32,12 +33,30 @@
     "CommonPods/BClasses/business.bundle",
     "CommonPods/BClasses/keyboard.bundle"
   ],
+  "pod_target_xcconfig": {
+    "DEFINES_MODULE": "YES"
+  },
   "dependencies": {
     "JKUIViewExtension": [
       "~>0.0.3"
     ],
     "JKAlertTransition": [
       "0.0.1"
+    ],
+    "JKNetwork": [
+      "0.0.8"
+    ],
+    "FDFullscreenPopGesture": [
+      "1.1"
+    ],
+    "MJRefresh": [
+      "3.2.3"
+    ],
+    "TZImagePreviewController": [
+      "0.3.0"
+    ],
+    "YYCategories": [
+
     ],
     "SnapKit": [
       "4.2.0"
@@ -48,25 +67,10 @@
     "RxCocoa": [
       "5.1.0"
     ],
-    "JKNetwork": [
-      "0.0.8"
-    ],
     "Toast-Swift": [
       "4.0.1"
     ],
-    "FDFullscreenPopGesture": [
-      "1.1"
-    ],
-    "MJRefresh": [
-      "3.2.3"
-    ],
     "Swinject": [
-
-    ],
-    "TZImagePreviewController": [
-      "0.3.0"
-    ],
-    "YYCategories": [
 
     ]
   },
