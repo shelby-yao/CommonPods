@@ -1,18 +1,18 @@
 PODS:
   - CommonPods (0.0.2):
+    - FDFullscreenPopGesture (= 1.1)
     - JKAlertTransition (= 0.0.1)
     - JKNetwork (= 0.0.8)
     - JKUIViewExtension (~> 0.0.3)
     - MJRefresh (= 3.2.3)
     - RxCocoa (= 5.1.0)
-    - RxDataSources (= 4.0.1)
     - RxSwift (= 5.1.0)
     - SnapKit (= 4.2.0)
     - Swinject
     - Toast-Swift (= 4.0.1)
     - TZImagePreviewController (= 0.3.0)
     - YYCategories
-  - Differentiator (4.0.1)
+  - FDFullscreenPopGesture (1.1)
   - JKAlertTransition (0.0.1)
   - JKNetwork (0.0.8)
   - JKUIViewExtension (0.0.4)
@@ -20,10 +20,6 @@ PODS:
   - RxCocoa (5.1.0):
     - RxRelay (~> 5)
     - RxSwift (~> 5)
-  - RxDataSources (4.0.1):
-    - Differentiator (~> 4.0)
-    - RxCocoa (~> 5.0)
-    - RxSwift (~> 5.0)
   - RxRelay (5.1.0):
     - RxSwift (~> 5)
   - RxSwift (5.1.0)
@@ -42,13 +38,12 @@ DEPENDENCIES:
 
 SPEC REPOS:
   trunk:
-    - Differentiator
+    - FDFullscreenPopGesture
     - JKAlertTransition
     - JKNetwork
     - JKUIViewExtension
     - MJRefresh
     - RxCocoa
-    - RxDataSources
     - RxRelay
     - RxSwift
     - SnapKit
@@ -63,14 +58,13 @@ EXTERNAL SOURCES:
     :path: "../"
 
 SPEC CHECKSUMS:
-  CommonPods: 8f35ef54b82dae2583b93b734e2c6036ce750b12
-  Differentiator: 886080237d9f87f322641dedbc5be257061b0602
+  CommonPods: ca45415066fa1333271275f423b003f20ba055b8
+  FDFullscreenPopGesture: a8a620179e3d9c40e8e00256dcee1c1a27c6d0f0
   JKAlertTransition: c7887a1ceb8f12cf76f159fb0ef7f2280bf803d4
   JKNetwork: 68cbc80969c2f9527f55dd42156e925e98449444
   JKUIViewExtension: 5e254b4e8607cf1e2d5c09077eb5b8cb1a6dcb04
   MJRefresh: 2b1214a2dc8f4df4c5dcb028ea2ad4e245425fb7
   RxCocoa: 13d2a4d7546a34b8ececae8c281e4ea1dbb94f2b
-  RxDataSources: efee07fa4de48477eca0a4611e6d11e2da9c1114
   RxRelay: a168bd6caf712d00c676ac344e9295afc93b418e
   RxSwift: ad5874f24bb0dbffd1e9bb8443604e3578796c7a
   SnapKit: fe8a619752f3f27075cc9a90244d75c6c3f27e2a

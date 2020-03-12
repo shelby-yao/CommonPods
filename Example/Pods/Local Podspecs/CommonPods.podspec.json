@@ -48,14 +48,14 @@
     "RxCocoa": [
       "5.1.0"
     ],
-    "RxDataSources": [
-      "4.0.1"
-    ],
     "JKNetwork": [
       "0.0.8"
     ],
     "Toast-Swift": [
       "4.0.1"
+    ],
+    "FDFullscreenPopGesture": [
+      "1.1"
     ],
     "MJRefresh": [
       "3.2.3"
