@@ -1,6 +1,6 @@
 {
   "name": "CommonPods",
-  "version": "0.0.1",
+  "version": "0.0.3",
   "summary": "A short description of CommonPods.",
   "description": "TODO: Add long description of the pod here.",
   "homepage": "https://github.com/shelby-yao/CommonPods",
@@ -13,11 +13,12 @@
   },
   "source": {
     "git": "https://github.com/shelby-yao/CommonPods.git",
-    "tag": "0.0.1"
+    "tag": "0.0.3"
   },
   "platforms": {
     "ios": "10.0"
   },
+  "swift_versions": "5.0",
   "source_files": [
     "CommonPods/Classes/**/*.{h,m,swift}",
     "CommonPods/BClasses/**/*.{h,m,swift}"
@@ -47,11 +48,8 @@
     "RxCocoa": [
       "5.1.0"
     ],
-    "RxDataSources": [
-      "4.0.1"
-    ],
     "JKNetwork": [
-
+      "0.0.7"
     ],
     "Toast-Swift": [
       "4.0.1"
@@ -71,5 +69,6 @@
     "YYCategories": [
 
     ]
-  }
+  },
+  "swift_version": "5.0"
 }
