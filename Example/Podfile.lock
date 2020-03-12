@@ -1,0 +1,89 @@
+PODS:
+  - CommonPods (0.0.1):
+    - FDFullscreenPopGesture (= 1.1)
+    - JKAlertTransition (= 0.0.1)
+    - JKNetwork
+    - JKUIViewExtension (~> 0.0.3)
+    - MJRefresh (= 3.2.3)
+    - RxCocoa (= 5.1.0)
+    - RxDataSources (= 4.0.1)
+    - RxSwift (= 5.1.0)
+    - SnapKit (= 4.2.0)
+    - Swinject
+    - Toast-Swift (= 4.0.1)
+    - TZImagePreviewController (= 0.3.0)
+    - YYCategories
+  - Differentiator (4.0.1)
+  - FDFullscreenPopGesture (1.1)
+  - JKAlertTransition (0.0.1)
+  - JKNetwork (0.0.8)
+  - JKUIViewExtension (0.0.4)
+  - MJRefresh (3.2.3)
+  - RxCocoa (5.1.0):
+    - RxRelay (~> 5)
+    - RxSwift (~> 5)
+  - RxDataSources (4.0.1):
+    - Differentiator (~> 4.0)
+    - RxCocoa (~> 5.0)
+    - RxSwift (~> 5.0)
+  - RxRelay (5.1.0):
+    - RxSwift (~> 5)
+  - RxSwift (5.1.0)
+  - SnapKit (4.2.0)
+  - Swinject (2.7.1)
+  - Toast-Swift (4.0.1)
+  - TZImagePickerController (3.3.1)
+  - TZImagePreviewController (0.3.0):
+    - TZImagePickerController (>= 3.1.7)
+  - YYCategories (1.0.4):
+    - YYCategories/no-arc (= 1.0.4)
+  - YYCategories/no-arc (1.0.4)
+
+DEPENDENCIES:
+  - CommonPods (from `../`)
+
+SPEC REPOS:
+  trunk:
+    - Differentiator
+    - FDFullscreenPopGesture
+    - JKAlertTransition
+    - JKNetwork
+    - JKUIViewExtension
+    - MJRefresh
+    - RxCocoa
+    - RxDataSources
+    - RxRelay
+    - RxSwift
+    - SnapKit
+    - Swinject
+    - Toast-Swift
+    - TZImagePickerController
+    - TZImagePreviewController
+    - YYCategories
+
+EXTERNAL SOURCES:
+  CommonPods:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  CommonPods: a567bb62605f74d0a3c50dd5d00344debbfaeda8
+  Differentiator: 886080237d9f87f322641dedbc5be257061b0602
+  FDFullscreenPopGesture: a8a620179e3d9c40e8e00256dcee1c1a27c6d0f0
+  JKAlertTransition: c7887a1ceb8f12cf76f159fb0ef7f2280bf803d4
+  JKNetwork: 68cbc80969c2f9527f55dd42156e925e98449444
+  JKUIViewExtension: 5e254b4e8607cf1e2d5c09077eb5b8cb1a6dcb04
+  MJRefresh: 2b1214a2dc8f4df4c5dcb028ea2ad4e245425fb7
+  RxCocoa: 13d2a4d7546a34b8ececae8c281e4ea1dbb94f2b
+  RxDataSources: efee07fa4de48477eca0a4611e6d11e2da9c1114
+  RxRelay: a168bd6caf712d00c676ac344e9295afc93b418e
+  RxSwift: ad5874f24bb0dbffd1e9bb8443604e3578796c7a
+  SnapKit: fe8a619752f3f27075cc9a90244d75c6c3f27e2a
+  Swinject: ddf78b8486dd9b71a667b852cad919ab4484478e
+  Toast-Swift: e42a638589a2f95036b4bb7626cfbdde7daf0393
+  TZImagePickerController: 99f03b64145a8c92c55b9b1b931410967d9be4cb
+  TZImagePreviewController: f62b2984be69a729d730389c33131cd9889a1c9e
+  YYCategories: 6bcd4314c6661a561410dce4a793379ebd306abd
+
+PODFILE CHECKSUM: 638f90b8f1883fdaae04603616fedb3e0c13dd79
+
+COCOAPODS: 1.9.1

@@ -1,0 +1,6 @@
+module JKUIViewExtension {
+  umbrella header "JKUIViewExtension-umbrella.h"
+
+  export *
+  module * { export * }
+}

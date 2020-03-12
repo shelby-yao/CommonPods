@@ -1,0 +1,6 @@
+module JKNetwork {
+  umbrella header "JKNetwork-umbrella.h"
+
+  export *
+  module * { export * }
+}
