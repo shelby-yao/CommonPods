@@ -81,6 +81,7 @@ TODO: Add long description of the pod here.
   # s.social_media_url = 'https://twitter.com/<TWITTER_USERNAME>'
 
    s.ios.deployment_target = '10.0'
+   s.swift_version = '5.0'
 
   s.source_files = 'CommonPods/Classes/**/*.{h,m,swift}', 'CommonPods/BClasses/**/*.{h,m,swift}'
    s.public_header_files = 'CommonPods/Classes/**/*.h', 'CommonPods/BClasses/**/*.h'
@@ -91,7 +92,7 @@ TODO: Add long description of the pod here.
    s.dependency 'RxSwift' , '5.1.0'
    s.dependency 'RxCocoa' , '5.1.0'
 #   s.dependency 'RxDataSources', '4.0.1'
-   s.dependency 'JKNetwork' , '0.0.8'
+   s.dependency 'JKNetwork' 
    s.dependency 'Toast-Swift', '4.0.1'
    s.dependency 'FDFullscreenPopGesture', '1.1'
    s.dependency 'MJRefresh' , '3.2.3'
