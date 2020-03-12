@@ -29,7 +29,7 @@ Pod::Spec.new do |s|
     # s.social_media_url = 'https://twitter.com/<TWITTER_USERNAME>'
     s.swift_version = '5.0'
     s.ios.deployment_target = '10.0'
-    
+    s.static_framework = true
     s.source_files = 'CommonPods/Classes/**/*.{h,m,swift}', 'CommonPods/BClasses/**/*.{h,m,swift}'
     s.public_header_files = 'CommonPods/Classes/**/*.h', 'CommonPods/BClasses/**/*.h'
     s.resources = 'CommonPods/Classes/TZImagePickerController.bundle', 'CommonPods/BClasses/business.bundle', 'CommonPods/BClasses/keyboard.bundle'
