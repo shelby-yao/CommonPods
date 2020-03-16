@@ -3,6 +3,10 @@
   "version": "0.0.3",
   "summary": "A short description of CommonPods.",
   "description": "TODO: Add long description of the pod here.",
+  "source": {
+    "git": "https://github.com/shelby-yao/CommonPods.git",
+    "tag": "0.0.3"
+  },
   "homepage": "https://github.com/shelby-yao/CommonPods",
   "license": {
     "type": "MIT",
@@ -10,10 +14,6 @@
   },
   "authors": {
     "shelby-yao": "shelby_yao@163.com"
-  },
-  "source": {
-    "git": "https://github.com/shelby-yao/CommonPods.git",
-    "tag": "0.0.3"
   },
   "platforms": {
     "ios": "10.0"
@@ -49,7 +49,7 @@
       "5.1.0"
     ],
     "JKNetwork": [
-      "0.0.7"
+      "0.0.6"
     ],
     "Toast-Swift": [
       "4.0.1"

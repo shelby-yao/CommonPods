@@ -1,1 +1,0 @@
-../../../JKNetwork/JKNetworking/JKNetworkingKit/UIKit+AFNetworking/AFAutoPurgingImageCache.h

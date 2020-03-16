@@ -1,1 +1,0 @@
-../../../JKNetwork/JKNetworking/JKNetworkingKit/AFNetworking/AFSecurityPolicy.h
