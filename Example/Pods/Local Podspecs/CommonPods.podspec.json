@@ -1,11 +1,11 @@
 {
   "name": "CommonPods",
-  "version": "0.0.3",
+  "version": "0.0.4",
   "summary": "A short description of CommonPods.",
   "description": "TODO: Add long description of the pod here.",
   "source": {
     "git": "https://github.com/shelby-yao/CommonPods.git",
-    "tag": "0.0.3"
+    "tag": "0.0.4"
   },
   "homepage": "https://github.com/shelby-yao/CommonPods",
   "license": {

@@ -14,7 +14,7 @@ PODS:
   - AFNetworking/Serialization (3.0.4)
   - AFNetworking/UIKit (3.0.4):
     - AFNetworking/NSURLSession
-  - CommonPods (0.0.3):
+  - CommonPods (0.0.4):
     - FDFullscreenPopGesture (= 1.1)
     - JKAlertTransition (= 0.0.1)
     - JKNetwork (= 0.0.6)
@@ -76,7 +76,7 @@ EXTERNAL SOURCES:
 
 SPEC CHECKSUMS:
   AFNetworking: a0075feb321559dc78d9d85b55d11caa19eabb93
-  CommonPods: 77a0b459c7c44e3ef307db6d452097df89669cd5
+  CommonPods: ada304b1e1540f4f6222eb830e71cacce6f8d00f
   FDFullscreenPopGesture: a8a620179e3d9c40e8e00256dcee1c1a27c6d0f0
   JKAlertTransition: c7887a1ceb8f12cf76f159fb0ef7f2280bf803d4
   JKNetwork: 24b3da8db44f5db5149e917e4a0b6492c38953ef
