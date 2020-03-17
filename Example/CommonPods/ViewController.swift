@@ -30,11 +30,7 @@ class ViewController: UIViewController {
     
     @IBAction func loadLocalFile(_ sender: Any) {
 
-//        guard let pdfFilePath = Bundle.main.path(forResource: "git搭建", ofType: "pdf") else { return }
-//        PDFReaderManage.shareInstance.openURL(SourceType.local(url: pdfFilePath), openType: OpenType.present(self))
-    }
-    @IBAction func loadRemoteFile(_ sender: Any) {
-//        let url = "http://www.gov.cn/zhengce/pdfFile/2018_PDF.pdf"
+
 //        PDFReaderManage.shareInstance.openURL(.netWork(url: url), openType: .present(self))
     }
   

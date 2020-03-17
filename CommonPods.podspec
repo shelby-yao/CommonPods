@@ -60,7 +60,9 @@
 
 Pod::Spec.new do |s|
   s.name             = 'CommonPods'
-  s.version          = '0.0.2'
+
+  s.version          = '0.0.5'
+
   s.summary          = 'A short description of CommonPods.'
 
 # This description is used to generate tags and improve search results.
@@ -72,6 +74,7 @@ Pod::Spec.new do |s|
   s.description      = <<-DESC
 TODO: Add long description of the pod here.
                        DESC
+   s.source = 'https://github.com/CocoaPods/Specs.git'
 
   s.homepage         = 'https://github.com/shelby-yao/CommonPods'
   # s.screenshots     = 'www.example.com/screenshots_1', 'www.example.com/screenshots_2'
@@ -81,7 +84,9 @@ TODO: Add long description of the pod here.
   # s.social_media_url = 'https://twitter.com/<TWITTER_USERNAME>'
 
    s.ios.deployment_target = '10.0'
-   s.swift_version = '5.0'
+
+s.swift_version = '5.0'
+
 
   s.source_files = 'CommonPods/Classes/**/*.{h,m,swift}', 'CommonPods/BClasses/**/*.{h,m,swift}'
    s.public_header_files = 'CommonPods/Classes/**/*.h', 'CommonPods/BClasses/**/*.h'
@@ -91,8 +96,10 @@ TODO: Add long description of the pod here.
    s.dependency 'SnapKit' , '4.2.0'
    s.dependency 'RxSwift' , '5.1.0'
    s.dependency 'RxCocoa' , '5.1.0'
-#   s.dependency 'RxDataSources', '4.0.1'
-   s.dependency 'JKNetwork' 
+
+   #s.dependency 'RxDataSources', '4.0.1'
+   s.dependency 'JKNetwork' , '0.0.6'
+
    s.dependency 'Toast-Swift', '4.0.1'
    s.dependency 'FDFullscreenPopGesture', '1.1'
    s.dependency 'MJRefresh' , '3.2.3'

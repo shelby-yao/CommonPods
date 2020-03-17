@@ -1,11 +1,19 @@
 {
   "name": "CommonPods",
+<<<<<<< HEAD
   "version": "0.0.2",
+=======
+  "version": "0.0.4",
+>>>>>>> 3
   "summary": "A short description of CommonPods.",
   "description": "TODO: Add long description of the pod here.",
   "source": {
     "git": "https://github.com/shelby-yao/CommonPods.git",
+<<<<<<< HEAD
     "tag": "0.0.2"
+=======
+    "tag": "0.0.4"
+>>>>>>> 3
   },
   "homepage": "https://github.com/shelby-yao/CommonPods",
   "license": {
@@ -15,11 +23,18 @@
   "authors": {
     "shelby-yao": "shelby_yao@163.com"
   },
+<<<<<<< HEAD
   "swift_versions": "5.0",
   "platforms": {
     "ios": "10.0"
   },
   "static_framework": true,
+=======
+  "platforms": {
+    "ios": "10.0"
+  },
+  "swift_versions": "5.0",
+>>>>>>> 3
   "source_files": [
     "CommonPods/Classes/**/*.{h,m,swift}",
     "CommonPods/BClasses/**/*.{h,m,swift}"
@@ -33,9 +48,12 @@
     "CommonPods/BClasses/business.bundle",
     "CommonPods/BClasses/keyboard.bundle"
   ],
+<<<<<<< HEAD
   "pod_target_xcconfig": {
     "DEFINES_MODULE": "YES"
   },
+=======
+>>>>>>> 3
   "dependencies": {
     "JKUIViewExtension": [
       "~>0.0.3"
@@ -43,6 +61,7 @@
     "JKAlertTransition": [
       "0.0.1"
     ],
+<<<<<<< HEAD
     "JKNetwork": [
       "0.0.8"
     ],
@@ -58,6 +77,8 @@
     "YYCategories": [
 
     ],
+=======
+>>>>>>> 3
     "SnapKit": [
       "4.2.0"
     ],
@@ -67,11 +88,34 @@
     "RxCocoa": [
       "5.1.0"
     ],
+<<<<<<< HEAD
     "Toast-Swift": [
       "4.0.1"
     ],
     "Swinject": [
 
+=======
+    "JKNetwork": [
+      "0.0.6"
+    ],
+    "Toast-Swift": [
+      "4.0.1"
+    ],
+    "FDFullscreenPopGesture": [
+      "1.1"
+    ],
+    "MJRefresh": [
+      "3.2.3"
+    ],
+    "Swinject": [
+
+    ],
+    "TZImagePreviewController": [
+      "0.3.0"
+    ],
+    "YYCategories": [
+
+>>>>>>> 3
     ]
   },
   "swift_version": "5.0"

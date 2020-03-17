@@ -11,31 +11,31 @@
 NS_ASSUME_NONNULL_BEGIN
 
 typedef NS_ENUM(NSInteger,JJTextFunctionType){
-    SMTextFunctionTypeNoneFunction = 0,//默认不禁用
-    SMTextFunctionTypePaste = 1 << 1,//禁用粘贴
-    SMTextFunctionTypeSelectSignl = 1 << 2 ,//禁用选择
-    SMTextFunctionTypeSelectAll = 1 << 3,//禁用全选
-    SMTextFunctionTypeAllFunction = -1,//禁用所有功能
+    JJTextFunctionTypeNoneFunction = 0,//默认不禁用
+    JJTextFunctionTypePaste = 1 << 1,//禁用粘贴
+    JJTextFunctionTypeSelectSignl = 1 << 2 ,//禁用选择
+    JJTextFunctionTypeSelectAll = 1 << 3,//禁用全选
+    JJTextFunctionTypeAllFunction = -1,//禁用所有功能
 };
 
 typedef NS_ENUM(NSInteger,JJTextContentType) {
-    SMTextContentTypeDefalut = 0,//no filter
-    SMTextContentTypeASCII,//数字字母
-    SMTextContentTypeOnlyNum,//只有数字
-    SMTextContentTypeOnlyChinese,//只有中文
-    SMTextContentTypeOnlyIntAndFloat, //整形和浮点型
-    SMTextContentTypeIDCard //身份证 数字 + "x"
+    JJTextContentTypeDefalut = 0,//no filter
+    JJTextContentTypeASCII,//数字字母
+    JJTextContentTypeOnlyNum,//只有数字
+    JJTextContentTypeOnlyChinese,//只有中文
+    JJTextContentTypeOnlyIntAndFloat, //整形和浮点型
+    JJTextContentTypeIDCard //身份证 数字 + "x"
 };
 @interface JJMultiTextField : UITextField<UITextFieldDelegate>
 //defalut is INT_MAX
 @property (nonatomic,assign) int maxNumber;
-//defalut is SMTextFunctionTypeAllFunction
+//defalut is JJTextFunctionTypeAllFunction
 @property (nonatomic,assign) JJTextFunctionType forbiddenType;
 @property (nonatomic,assign) JJTextContentType contentType;
 
 ///该参数只在一下两种类型下有效
-//SMTextContentTypeOnlyNum,//只有数字
-//SMTextContentTypeOnlyIntAndFloat //整形和浮点型
+//JJTextContentTypeOnlyNum,//只有数字
+//JJTextContentTypeOnlyIntAndFloat //整形和浮点型
 @property (nonatomic,assign) CGFloat maxValue;
 //无法存在的单独字符
 @property (nonatomic, copy) NSString *singleBanWord;

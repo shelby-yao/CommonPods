@@ -10,6 +10,7 @@
 #endif
 #endif
 
+<<<<<<< HEAD
 #import "AFCompatibilityMacros.h"
 #import "AFHTTPSessionManager.h"
 #import "AFNetworking.h"
@@ -30,6 +31,10 @@
 #import "UIKit+AFNetworking.h"
 #import "UIProgressView+AFNetworking.h"
 #import "UIRefreshControl+AFNetworking.h"
+=======
+#import "JKNetworking.h"
+#import "NSURLSession+JKCategory.h"
+>>>>>>> 3
 
 FOUNDATION_EXPORT double JKNetworkVersionNumber;
 FOUNDATION_EXPORT const unsigned char JKNetworkVersionString[];

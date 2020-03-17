@@ -1,8 +1,25 @@
 PODS:
-  - CommonPods (0.0.2):
+
+  - AFNetworking (3.0.4):
+    - AFNetworking/NSURLSession (= 3.0.4)
+    - AFNetworking/Reachability (= 3.0.4)
+    - AFNetworking/Security (= 3.0.4)
+    - AFNetworking/Serialization (= 3.0.4)
+    - AFNetworking/UIKit (= 3.0.4)
+  - AFNetworking/NSURLSession (3.0.4):
+    - AFNetworking/Reachability
+    - AFNetworking/Security
+    - AFNetworking/Serialization
+  - AFNetworking/Reachability (3.0.4)
+  - AFNetworking/Security (3.0.4)
+  - AFNetworking/Serialization (3.0.4)
+  - AFNetworking/UIKit (3.0.4):
+    - AFNetworking/NSURLSession
+  - CommonPods (0.0.4):
     - FDFullscreenPopGesture (= 1.1)
     - JKAlertTransition (= 0.0.1)
-    - JKNetwork (= 0.0.8)
+    - JKNetwork (= 0.0.6)
+
     - JKUIViewExtension (~> 0.0.3)
     - MJRefresh (= 3.2.3)
     - RxCocoa (= 5.1.0)
@@ -14,7 +31,10 @@ PODS:
     - YYCategories
   - FDFullscreenPopGesture (1.1)
   - JKAlertTransition (0.0.1)
-  - JKNetwork (0.0.8)
+
+  - JKNetwork (0.0.6):
+    - AFNetworking (~> 3.0.0)
+
   - JKUIViewExtension (0.0.4)
   - MJRefresh (3.2.3)
   - RxCocoa (5.1.0):
@@ -38,6 +58,9 @@ DEPENDENCIES:
 
 SPEC REPOS:
   trunk:
+
+    - AFNetworking
+
     - FDFullscreenPopGesture
     - JKAlertTransition
     - JKNetwork
@@ -58,10 +81,13 @@ EXTERNAL SOURCES:
     :path: "../"
 
 SPEC CHECKSUMS:
-  CommonPods: ea63e627320af40c8b3e5c7389efbdbbb532ecc6
+
+  AFNetworking: a0075feb321559dc78d9d85b55d11caa19eabb93
+  CommonPods: ada304b1e1540f4f6222eb830e71cacce6f8d00f
   FDFullscreenPopGesture: a8a620179e3d9c40e8e00256dcee1c1a27c6d0f0
   JKAlertTransition: c7887a1ceb8f12cf76f159fb0ef7f2280bf803d4
-  JKNetwork: 68cbc80969c2f9527f55dd42156e925e98449444
+  JKNetwork: 24b3da8db44f5db5149e917e4a0b6492c38953ef
+
   JKUIViewExtension: 5e254b4e8607cf1e2d5c09077eb5b8cb1a6dcb04
   MJRefresh: 2b1214a2dc8f4df4c5dcb028ea2ad4e245425fb7
   RxCocoa: 13d2a4d7546a34b8ececae8c281e4ea1dbb94f2b
@@ -74,6 +100,7 @@ SPEC CHECKSUMS:
   TZImagePreviewController: f62b2984be69a729d730389c33131cd9889a1c9e
   YYCategories: 6bcd4314c6661a561410dce4a793379ebd306abd
 
-PODFILE CHECKSUM: 5018c24d226c3ef80baa19ea71479aa1dffa0893
+PODFILE CHECKSUM: 638f90b8f1883fdaae04603616fedb3e0c13dd79
+
 
 COCOAPODS: 1.9.1

@@ -38,7 +38,7 @@
 
 - (void)awakeFromNib {
     [super awakeFromNib];
-    self.forbiddenType = SMTextFunctionTypeAllFunction;
+    self.forbiddenType = JJTextFunctionTypeAllFunction;
     self.maxNumber = INT_MAX;
     [self addTarget:self action:@selector(textDidEditChange:) forControlEvents:UIControlEventEditingChanged];
     self.delegate = self;
@@ -47,7 +47,7 @@
 - (instancetype)initWithFrame:(CGRect)frame {
     if (self = [super initWithFrame:frame]) {
         self.maxValue = CGFLOAT_MAX;
-        self.forbiddenType = SMTextFunctionTypeAllFunction;
+        self.forbiddenType = JJTextFunctionTypeAllFunction;
         self.maxNumber = INT_MAX;
         [self addTarget:self action:@selector(textDidEditChange:) forControlEvents:UIControlEventEditingChanged];
         self.delegate = self;
@@ -75,9 +75,9 @@
             _length = toBeString.length;
         }
     }else {//有高亮选择
-        if (self.contentType == SMTextContentTypeOnlyNum) {
+        if (self.contentType == JJTextContentTypeOnlyNum) {
             textField.text = @"";
-        }else if (self.contentType == SMTextContentTypeASCII){
+        }else if (self.contentType == JJTextContentTypeASCII){
             textField.text = [self filterOtherKeepASCWithString:toBeString];
         }
     }
@@ -85,16 +85,16 @@
 
 
 - (BOOL)canPerformAction:(SEL)action withSender:(id)sender {
-    if (self.forbiddenType == SMTextFunctionTypeNoneFunction)return [super canPerformAction:action withSender:sender];
-    if (self.forbiddenType == SMTextFunctionTypeAllFunction)return NO;
+    if (self.forbiddenType == JJTextFunctionTypeNoneFunction)return [super canPerformAction:action withSender:sender];
+    if (self.forbiddenType == JJTextFunctionTypeAllFunction)return NO;
     if(action == @selector(paste:)){
-        return (self.forbiddenType & SMTextFunctionTypePaste) == 0;
+        return (self.forbiddenType & JJTextFunctionTypePaste) == 0;
     }
     if (action == @selector(selectAll:)) {
-        return (self.forbiddenType &SMTextFunctionTypeSelectAll) == 0;
+        return (self.forbiddenType &JJTextFunctionTypeSelectAll) == 0;
     }
     if (action == @selector(select:)) {
-        return (self.forbiddenType & SMTextFunctionTypeSelectSignl) == 0;
+        return (self.forbiddenType & JJTextFunctionTypeSelectSignl) == 0;
     }
     return [super canPerformAction:action withSender:sender];
 }
@@ -103,11 +103,11 @@
 - (BOOL)textField:(UITextField *)textField shouldChangeCharactersInRange:(NSRange)range replacementString:(NSString *)string {
     if (string.length == 0)return YES;
     if ([self.filterCharactor containsObject:string])return NO;
-    if (self.contentType == SMTextContentTypeDefalut)return YES;
-    if (self.contentType == SMTextContentTypeOnlyNum) return [self validateNumber:string];
-    if (self.contentType == SMTextContentTypeOnlyIntAndFloat) return  [self validateIntOrFloat:string];
-    if (self.contentType == SMTextContentTypeIDCard)return [self validateID:string];
-    if (self.contentType == SMTextContentTypeOnlyChinese) {
+    if (self.contentType == JJTextContentTypeDefalut)return YES;
+    if (self.contentType == JJTextContentTypeOnlyNum) return [self validateNumber:string];
+    if (self.contentType == JJTextContentTypeOnlyIntAndFloat) return  [self validateIntOrFloat:string];
+    if (self.contentType == JJTextContentTypeIDCard)return [self validateID:string];
+    if (self.contentType == JJTextContentTypeOnlyChinese) {
         //不可输入数字/以及特殊字符
         return ![self validateChinese:string]&&![self validateNumber:string];
     }
@@ -118,16 +118,16 @@
 - (NSString *)resultString:(NSString *)string {
     switch (self.contentType) {
 
-        case SMTextContentTypeASCII://(过滤中文)
+        case JJTextContentTypeASCII://(过滤中文)
             return [self filterOtherKeepASCWithString:string];
             break;
-        case SMTextContentTypeDefalut:
+        case JJTextContentTypeDefalut:
             return string;
             break;
-        case SMTextContentTypeOnlyNum:
+        case JJTextContentTypeOnlyNum:
             return [self filterOtherKeepNumberWithString:string];
             break;
-        case SMTextContentTypeOnlyChinese:
+        case JJTextContentTypeOnlyChinese:
             return [self filterOtherKeepChineseWithString:string];
             break;
         
