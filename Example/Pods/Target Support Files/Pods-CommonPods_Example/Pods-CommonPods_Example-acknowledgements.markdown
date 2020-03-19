@@ -1,8 +1,6 @@
 # Acknowledgements
 This application makes use of the following third party libraries:
 
-<<<<<<< HEAD
-=======
 ## AFNetworking
 
 Copyright (c) 2011–2015 Alamofire Software Foundation (http://alamofire.org/)
@@ -26,7 +24,6 @@ OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
 THE SOFTWARE.
 
 
->>>>>>> 3
 ## CommonPods
 
 Copyright (c) 2019 shelby-yao <shelby_yao@163.com>
