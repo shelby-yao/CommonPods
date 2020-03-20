@@ -10,7 +10,7 @@
 Pod::Spec.new do |s|
   s.name             = 'CommonPods'
 
-  s.version          = '0.0.5'
+  s.version          = '0.0.6'
 
   s.summary          = 'A short description of CommonPods.'
 
@@ -47,7 +47,7 @@ s.swift_version = '5.0'
    s.dependency 'RxCocoa' , '5.1.0'
 
    #s.dependency 'RxDataSources', '4.0.1'
-   s.dependency 'JKNetwork' , '0.0.6'
+   s.dependency 'JKNetwork' , '0.0.9'
 
    s.dependency 'Toast-Swift', '4.0.1'
    s.dependency 'FDFullscreenPopGesture', '1.1'
