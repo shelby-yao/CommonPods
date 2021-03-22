@@ -55,7 +55,7 @@ s.swift_version = '5.0'
    s.dependency 'Swinject'
 
     
-    s.dependency 'TZImagePreviewController' , '0.3.0'
+    s.dependency 'TZImagePreviewController' , '0.5.0'
     s.dependency 'YYCategories'
 end
 
