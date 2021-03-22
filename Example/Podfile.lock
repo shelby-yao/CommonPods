@@ -1,5 +1,5 @@
 PODS:
-  - CommonPods (0.0.5):
+  - CommonPods (0.0.7):
     - FDFullscreenPopGesture (= 1.1)
     - JKAlertTransition (= 0.0.1)
     - JKNetwork (= 0.0.9)
@@ -10,25 +10,25 @@ PODS:
     - SnapKit (= 4.2.0)
     - Swinject
     - Toast-Swift (= 4.0.1)
-    - TZImagePreviewController (= 0.3.0)
+    - TZImagePreviewController (= 0.5.0)
     - YYCategories
   - FDFullscreenPopGesture (1.1)
   - JKAlertTransition (0.0.1)
   - JKNetwork (0.0.9)
-  - JKUIViewExtension (0.0.4)
+  - JKUIViewExtension (0.0.5)
   - MJRefresh (3.2.3)
   - RxCocoa (5.1.0):
     - RxRelay (~> 5)
     - RxSwift (~> 5)
-  - RxRelay (5.1.0):
+  - RxRelay (5.1.1):
     - RxSwift (~> 5)
   - RxSwift (5.1.0)
   - SnapKit (4.2.0)
   - Swinject (2.7.1)
   - Toast-Swift (4.0.1)
-  - TZImagePickerController (3.3.1)
-  - TZImagePreviewController (0.3.0):
-    - TZImagePickerController (>= 3.1.7)
+  - TZImagePickerController (3.5.8)
+  - TZImagePreviewController (0.5.0):
+    - TZImagePickerController (>= 3.5.7)
   - YYCategories (1.0.4):
     - YYCategories/no-arc (= 1.0.4)
   - YYCategories/no-arc (1.0.4)
@@ -37,7 +37,7 @@ DEPENDENCIES:
   - CommonPods (from `../`)
 
 SPEC REPOS:
-  trunk:
+  https://cdn.cocoapods.org/:
     - FDFullscreenPopGesture
     - JKAlertTransition
     - JKNetwork
@@ -58,22 +58,22 @@ EXTERNAL SOURCES:
     :path: "../"
 
 SPEC CHECKSUMS:
-  CommonPods: 71cec377ce9be69429d4edb037500925cfec8700
+  CommonPods: bbf493966f0573c57d360c235016b5b24d91da15
   FDFullscreenPopGesture: a8a620179e3d9c40e8e00256dcee1c1a27c6d0f0
   JKAlertTransition: c7887a1ceb8f12cf76f159fb0ef7f2280bf803d4
   JKNetwork: 7e9718558a7b141c99af95b796a19002befb1cdf
-  JKUIViewExtension: 5e254b4e8607cf1e2d5c09077eb5b8cb1a6dcb04
+  JKUIViewExtension: 71edf983e1edeacd3818269def986a9f71d421c3
   MJRefresh: 2b1214a2dc8f4df4c5dcb028ea2ad4e245425fb7
   RxCocoa: 13d2a4d7546a34b8ececae8c281e4ea1dbb94f2b
-  RxRelay: a168bd6caf712d00c676ac344e9295afc93b418e
+  RxRelay: d77f7d771495f43c556cbc43eebd1bb54d01e8e9
   RxSwift: ad5874f24bb0dbffd1e9bb8443604e3578796c7a
   SnapKit: fe8a619752f3f27075cc9a90244d75c6c3f27e2a
   Swinject: ddf78b8486dd9b71a667b852cad919ab4484478e
   Toast-Swift: e42a638589a2f95036b4bb7626cfbdde7daf0393
-  TZImagePickerController: 99f03b64145a8c92c55b9b1b931410967d9be4cb
-  TZImagePreviewController: f62b2984be69a729d730389c33131cd9889a1c9e
+  TZImagePickerController: 7fd9702897ef8c0b7c951e5463f4bcf398296f9e
+  TZImagePreviewController: c057ff312c3c54e76b6c26bdfb8d1c5ed524495d
   YYCategories: 6bcd4314c6661a561410dce4a793379ebd306abd
 
 PODFILE CHECKSUM: 5018c24d226c3ef80baa19ea71479aa1dffa0893
 
-COCOAPODS: 1.9.1
+COCOAPODS: 1.10.1

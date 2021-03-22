@@ -4,14 +4,14 @@
 //
 //  Created by 谭真 on 18/08/23.
 //  Copyright © 2018年 谭真. All rights reserved.
-//  version 0.3.0 - 2019.01.04
+//  version 0.5.0 - 2020.12.09
 
 #import "TZImagePreviewController.h"
-#import "TZPhotoPreviewCell.h"
-#import "TZAssetModel.h"
-#import "UIView+Layout.h"
-#import "TZImagePickerController.h"
-#import "TZImageManager.h"
+#import <TZImagePickerController/TZPhotoPreviewCell.h>
+#import <TZImagePickerController/TZAssetModel.h>
+#import <TZImagePickerController/UIView+TZLayout.h>
+#import <TZImagePickerController/TZImagePickerController.h>
+#import <TZImagePickerController/TZImageManager.h>
 #import <AVFoundation/AVFoundation.h>
 
 @interface TZImagePreviewController ()<UICollectionViewDataSource,UICollectionViewDelegate,UIScrollViewDelegate> {
@@ -353,21 +353,20 @@
         } else {
             cell = [collectionView dequeueReusableCellWithReuseIdentifier:@"TZPhotoPreviewCell" forIndexPath:indexPath];
             TZPhotoPreviewCell *photoPreviewCell = (TZPhotoPreviewCell *)cell;
-            __weak typeof(_tzImagePickerVc) weakTzImagePickerVc = _tzImagePickerVc;
             __weak typeof(_collectionView) weakCollectionView = _collectionView;
             __weak typeof(photoPreviewCell) weakCell = photoPreviewCell;
             [photoPreviewCell setImageProgressUpdateBlock:^(double progress) {
                 __strong typeof(weakSelf) strongSelf = weakSelf;
-                __strong typeof(weakTzImagePickerVc) strongTzImagePickerVc = weakTzImagePickerVc;
                 __strong typeof(weakCollectionView) strongCollectionView = weakCollectionView;
                 __strong typeof(weakCell) strongCell = weakCell;
                 strongSelf.progress = progress;
                 if (progress >= 1) {
                     if (strongSelf.isSelectOriginalPhoto) [strongSelf showPhotoBytes];
                     if (strongSelf.alertView && [strongCollectionView.visibleCells containsObject:strongCell]) {
-                        [strongTzImagePickerVc hideAlertView:strongSelf.alertView];
-                        strongSelf.alertView = nil;
-                        [strongSelf doneButtonClick];
+                        [strongSelf.alertView dismissViewControllerAnimated:YES completion:^{
+                            strongSelf.alertView = nil;
+                            [strongSelf doneButtonClick];
+                        }];
                     }
                 }
             }];

@@ -1,11 +1,11 @@
 {
   "name": "CommonPods",
-  "version": "0.0.5",
+  "version": "0.0.7",
   "summary": "A short description of CommonPods.",
   "description": "TODO: Add long description of the pod here.",
   "source": {
     "git": "https://github.com/shelby-yao/CommonPods.git",
-    "tag": "0.0.5"
+    "tag": "0.0.7"
   },
   "homepage": "https://github.com/shelby-yao/CommonPods",
   "license": {
@@ -64,7 +64,7 @@
 
     ],
     "TZImagePreviewController": [
-      "0.3.0"
+      "0.5.0"
     ],
     "YYCategories": [
 

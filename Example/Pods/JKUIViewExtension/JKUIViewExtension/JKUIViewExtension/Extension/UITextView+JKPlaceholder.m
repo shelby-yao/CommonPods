@@ -34,21 +34,19 @@
 
 
 #pragma mark - Class Methods
-#pragma mark  defaultPlaceholderColor 
+#pragma mark  defaultPlaceholderColor
 
 + (UIColor *)defaultPlaceholderColor {
     static UIColor *color = nil;
     static dispatch_once_t onceToken;
     dispatch_once(&onceToken, ^{
-        UITextField *textField = [[UITextField alloc] init];
-        textField.placeholder = @" ";
-        color = [textField valueForKeyPath:@"_placeholderLabel.textColor"];
+        color = [UIColor blackColor];
     });
     return color;
 }
 
 
-#pragma mark -  observingKeys 
+#pragma mark -  observingKeys
 
 + (NSArray *)observingKeys {
     return @[@"attributedText",
@@ -91,7 +89,7 @@
 }
 
 
-#pragma mark  placeholder 
+#pragma mark  placeholder
 
 - (NSString *)placeholder {
     return self.placeholderLabel.text;
@@ -111,7 +109,7 @@
     [self updatePlaceholderLabel];
 }
 
-#pragma mark  placeholderColor 
+#pragma mark  placeholderColor
 
 - (UIColor *)placeholderColor {
     return self.placeholderLabel.textColor;
@@ -122,7 +120,7 @@
 }
 
 
-#pragma mark  needsUpdateFont 
+#pragma mark  needsUpdateFont
 
 - (BOOL)needsUpdateFont {
     return [objc_getAssociatedObject(self, @selector(needsUpdateFont)) boolValue];
@@ -132,7 +130,10 @@
     objc_setAssociatedObject(self, @selector(needsUpdateFont), @(needsUpdate), OBJC_ASSOCIATION_RETAIN_NONATOMIC);
 }
 
-
+- (void) layoutSubviews {
+    [super layoutSubviews];
+    [self updatePlaceholderLabel];
+}
 #pragma mark - KVO
 
 - (void)observeValueForKeyPath:(NSString *)keyPath

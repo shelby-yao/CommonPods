@@ -4,7 +4,7 @@
 //
 //  Created by 谭真 on 18/08/23.
 //  Copyright © 2018年 谭真. All rights reserved.
-//  version 0.3.0 - 2019.01.04
+//  version 0.5.0 - 2020.12.09
 //  更多信息，请前往项目的github地址：https://github.com/banchichen/TZImagePreviewController
 
 #import <UIKit/UIKit.h>
@@ -32,4 +32,5 @@
 /// 用户点击了完成按钮
 @property (nonatomic, copy) void (^doneButtonClickBlock)(NSArray *photos,BOOL isSelectOriginalPhoto);
 
+- (void)doneButtonClick;
 @end

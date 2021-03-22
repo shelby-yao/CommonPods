@@ -7,7 +7,7 @@
 //
 
 #import "JJPicturesSelectCell.h"
-#import "UIView+Layout.h"
+#import "UIView+TZLayout.h"
 #import <Photos/Photos.h>
 #import "TZImagePickerController/TZImagePickerController.h"
 
