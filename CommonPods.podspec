@@ -10,7 +10,7 @@
 Pod::Spec.new do |s|
   s.name             = 'CommonPods'
 
-  s.version          = '0.0.9'
+  s.version          = '0.1.0'
 
   s.summary          = 'A short description of CommonPods.'
 
@@ -33,7 +33,7 @@ TODO: Add long description of the pod here.
   s.author           = { 'shelby-yao' => 'shelby_yao@163.com' }
   s.source           = { :git => 'https://github.com/shelby-yao/CommonPods.git', :tag => s.version.to_s }
   # s.source           = { :git => 'https://gitee.com/Shelby_455/CommonPods.git', :tag => s.version.to_s }
-  # s.social_media_url = 'https://twitter.com/<TWITTER_USERNAME>'d
+  # s.social_media_url = 'https://twitter.com/<TWITTER_USERNAME>'
 
    s.ios.deployment_target = '10.0'
 

@@ -19,7 +19,7 @@ public enum Result<T, E: Error> {
 
 
 open class TMNetworking: JKNetworkingDataTask {
-    public enum TokenType: Int {
+    @objc public enum TokenType: Int {
         case none = 0
         case token = 1
         case token2 = 2
