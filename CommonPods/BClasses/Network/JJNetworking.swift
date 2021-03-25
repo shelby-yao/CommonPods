@@ -12,7 +12,7 @@ public enum JJError: Error {
     case tips(String)
     case noMore(String)
 }
-public enum Result<T, E: Error> {
+public enum JJResult<T, E: Error> {
     case success(T)
     case failure(E)
 }
@@ -56,7 +56,7 @@ open class TMNetworking: JKNetworkingDataTask {
         DLogN("\n")
     }
     
-    public class func GET<R>(withUrl: String!, parameters: Any?, completionHandler: @escaping (_ result: Result<R, JJError>) -> Void) -> Self? where R: Codable {
+    public class func GET<R>(withUrl: String!, parameters: Any?, completionHandler: @escaping (_ result: JJResult<R, JJError>) -> Void) -> Self? where R: Codable {
         let network = self.get(withUrl: withUrl, parameters: parameters) { (error: Error?, resoponse: Any?) in
             if error != nil {
                 DLog("GET错误 = \(error) \n url = \(withUrl) \n parameters = \(parameters)")
@@ -99,7 +99,7 @@ open class TMNetworking: JKNetworkingDataTask {
         return network
     }
     
-    public class func POST<R>(withUrl: String!, parameters: Any?, completionHandler: @escaping (_ result: Result<R, JJError>) -> Void) -> Self? where R: Codable {
+    public class func POST<R>(withUrl: String!, parameters: Any?, completionHandler: @escaping (_ result: JJResult<R, JJError>) -> Void) -> Self? where R: Codable {
         let network = self.post(withUrl: withUrl, parameters: parameters) { (error: Error?, resoponse: Any?) in
             if error != nil {
                 DLog("POST错误 = \(error) \n url = \(withUrl) \n parameters = \(parameters)")
@@ -142,7 +142,7 @@ open class TMNetworking: JKNetworkingDataTask {
         return network
     }
     
-    public class func DELETE<R>(withUrl: String!, parameters: Any?, completionHandler:@escaping (_ result: Result<R, JJError>) -> Void) -> Self? where R: Codable {
+    public class func DELETE<R>(withUrl: String!, parameters: Any?, completionHandler:@escaping (_ result: JJResult<R, JJError>) -> Void) -> Self? where R: Codable {
         let network = self.delete(withUrl: withUrl, parameters: parameters) { (error: Error?, response: Any?) in
             if error != nil {
                 DLog("DELETE错误 = \(error) \n url = \(withUrl) \n parameters = \(parameters)")
@@ -187,7 +187,7 @@ open class TMNetworking: JKNetworkingDataTask {
     }
     
     
-    public class func PUT<R>(withUrl: String!, parameters: Any?, completionHandler:@escaping (_ result: Result<R, JJError>) -> Void) -> Self? where R: Codable {
+    public class func PUT<R>(withUrl: String!, parameters: Any?, completionHandler:@escaping (_ result: JJResult<R, JJError>) -> Void) -> Self? where R: Codable {
         let network = self.put(withUrl: withUrl, parameters: parameters) { (error: Error?, resoponse: Any?) in
             if error != nil {
                 DLog("PUT错误 = \(error) \n url = \(withUrl) \n parameters = \(parameters)")
@@ -230,7 +230,7 @@ open class TMNetworking: JKNetworkingDataTask {
         return network
     }
     
-        public class func UPLOAD<R>(withUrl: String!, extention: String, path: String, fileData: Data, fileName: String, tokenType: TokenType = .none, contentType: String = "multipart/form-data", completionHandler:@escaping (_ result: Result<R, JJError>) -> Void) where R: Codable {
+        public class func UPLOAD<R>(withUrl: String!, extention: String, path: String, fileData: Data, fileName: String, tokenType: TokenType = .none, contentType: String = "multipart/form-data", completionHandler:@escaping (_ result: JJResult<R, JJError>) -> Void) where R: Codable {
             let networking = self.init()
             //        networking.hasToken = true
             networking.tokenType = tokenType
@@ -258,7 +258,7 @@ open class TMNetworking: JKNetworkingDataTask {
             })
         }
         
-        public class func UPLOADFILE<R>(withUrl: String!, fileData: Data, fileName: String, tokenType: TokenType = .none, contentType: String = "multipart/form-data", progressHandler: @escaping ((_ progress: Progress) -> Void), completionHandler:@escaping (_ result: Result<R, JJError>) -> Void) where R: Codable {
+        public class func UPLOADFILE<R>(withUrl: String!, fileData: Data, fileName: String, tokenType: TokenType = .none, contentType: String = "multipart/form-data", progressHandler: @escaping ((_ progress: Progress) -> Void), completionHandler:@escaping (_ result: JJResult<R, JJError>) -> Void) where R: Codable {
             let networking = self.init()
             networking.tokenType = tokenType
             let session = TMNetworking.init().sessionManager
@@ -361,7 +361,7 @@ open class TMNetworkingUploadTask: TMNetworking {
         self.sessionUploadTask?.cancel()
     }
     
-    class func UPLOADFILE<R>(withUrl: String!, filePathUrl: String, paramName: String, tokenType: TokenType, parameters: [String: String]?, formDic: [String: String]?, progressHandler: @escaping ((_ progress: Progress) -> Void), completionHandler:@escaping (_ result: Result<R, JJError>) -> Void) -> Self? where R: Codable {
+    class func UPLOADFILE<R>(withUrl: String!, filePathUrl: String, paramName: String, tokenType: TokenType, parameters: [String: String]?, formDic: [String: String]?, progressHandler: @escaping ((_ progress: Progress) -> Void), completionHandler:@escaping (_ result: JJResult<R, JJError>) -> Void) -> Self? where R: Codable {
             let network = self.upload(url: withUrl, filePathUrl: filePathUrl, paramName: paramName, parameters: parameters, formDic: formDic, progressHandler: progressHandler) { (error: Error?, resoponse: Any?) in
                 if error != nil {
                     completionHandler(.failure(JJError.tips("网络错误")))
@@ -378,7 +378,7 @@ open class TMNetworkingUploadTask: TMNetworking {
             network.tokenType = tokenType
             return network
         }
-    class func UPLOADFILE<R>(withUrl: String!, fileData: Data, file_extension: String, paramName: String, tokenType: TokenType, parameters: [String: String]?, formDic: [String: String]?, progressHandler: @escaping ((_ progress: Progress) -> Void), completionHandler:@escaping (_ result: Result<R, JJError>) -> Void) -> Self? where R: Codable {
+    class func UPLOADFILE<R>(withUrl: String!, fileData: Data, file_extension: String, paramName: String, tokenType: TokenType, parameters: [String: String]?, formDic: [String: String]?, progressHandler: @escaping ((_ progress: Progress) -> Void), completionHandler:@escaping (_ result: JJResult<R, JJError>) -> Void) -> Self? where R: Codable {
             let network = self.upload(url: withUrl, fileData: fileData, file_extension: file_extension, paramName: paramName, parameters: parameters, formDic: formDic, progressHandler: progressHandler) { (error: Error?, resoponse: Any?) in
                 if error != nil {
                     completionHandler(.failure(JJError.tips("网络错误")))
